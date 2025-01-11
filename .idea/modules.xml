@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Dio.Bootcamp.BancoPan.iml" filepath="$PROJECT_DIR$/.idea/Dio.Bootcamp.BancoPan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetos-aprendendo-sintaxe-java/projetos-aprendendo-sintaxe-java.iml" filepath="$PROJECT_DIR$/projetos-aprendendo-sintaxe-java/projetos-aprendendo-sintaxe-java.iml" />
     </modules>
   </component>
 </project>
