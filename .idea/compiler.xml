@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lista-circular" />
         <module name="estrutura-de-dados-em-java" />
       </profile>
     </annotationProcessing>
