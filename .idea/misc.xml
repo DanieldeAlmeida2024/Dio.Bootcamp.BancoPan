@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/estrutura-de-dados-em-java/pom.xml" />
         <option value="$PROJECT_DIR$/listacircular/pom.xml" />
+        <option value="$PROJECT_DIR$/arvore-binaria/pom.xml" />
       </list>
     </option>
   </component>
