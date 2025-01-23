@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lista-circular" />
-        <module name="arvore-binaria" />
-        <module name="estrutura-de-dados-em-java" />
+        <module name="entendendo-metodos-java" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="arvore-binaria" target="1.8" />
+      <module name="estrutura-de-dados-em-java" target="1.8" />
+      <module name="lista-circular" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
