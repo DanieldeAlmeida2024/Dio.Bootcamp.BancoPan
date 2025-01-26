@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="entendendo-metodos-java" />
         <module name="Desafios" />
+        <module name="programacao-orientada-a-objeto" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
