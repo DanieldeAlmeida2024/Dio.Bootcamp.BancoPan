@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="trabalhando-com-collections-java" />
         <module name="entendendo-metodos-java" />
         <module name="Desafios" />
         <module name="programacao-orientada-a-objeto" />
