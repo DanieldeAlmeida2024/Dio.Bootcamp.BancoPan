@@ -11,7 +11,14 @@
         <option value="$PROJECT_DIR$/Módulos Básicos/Desafios/pom.xml" />
         <option value="$PROJECT_DIR$/Módulos Intermediários/programacao-orientada-a-objeto/pom.xml" />
         <option value="$PROJECT_DIR$/Módulos Intermediários/trabalhando-com-collections-java/pom.xml" />
+        <option value="$PROJECT_DIR$/Módulos Intermediários/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/Módulos Intermediários/debugging-java/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Módulos Intermediários/debugging-java/debugando-na-ide-intellij/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager">

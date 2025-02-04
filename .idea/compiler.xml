@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="trabalhando-com-collections-java" />
+        <module name="debugging-java" />
         <module name="entendendo-metodos-java" />
         <module name="Desafios" />
         <module name="programacao-orientada-a-objeto" />
@@ -14,8 +15,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="arvore-binaria" target="1.8" />
+      <module name="debugando-na-ide-intellij" target="1.8" />
       <module name="estrutura-de-dados-em-java" target="1.8" />
       <module name="lista-circular" target="1.8" />
+      <module name="untitled" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
