@@ -9,6 +9,7 @@
         <module name="trabalhando-com-collections-java" />
         <module name="debugging-java" />
         <module name="entendendo-metodos-java" />
+        <module name="tratamento-de-excecoes-java" />
         <module name="Desafios" />
         <module name="programacao-orientada-a-objeto" />
       </profile>
