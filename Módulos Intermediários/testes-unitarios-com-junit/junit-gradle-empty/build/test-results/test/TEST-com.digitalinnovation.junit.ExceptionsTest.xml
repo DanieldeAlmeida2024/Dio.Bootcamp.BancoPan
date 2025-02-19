@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.digitalinnovation.junit.ExceptionsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-18T20:07:36" hostname="daniel-K46CA" time="0.041">
+  <properties/>
+  <testcase name="validarCenarioDeExcecaoNaTransferencia()" classname="com.digitalinnovation.junit.ExceptionsTest" time="0.041"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

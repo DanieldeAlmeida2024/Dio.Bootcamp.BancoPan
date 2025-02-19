@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/junit-gradle-empty.iml" filepath="$PROJECT_DIR$/junit-gradle-empty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/junit-gradle-empty.main.iml" filepath="$PROJECT_DIR$/.idea/modules/junit-gradle-empty.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/junit-gradle-empty.test.iml" filepath="$PROJECT_DIR$/.idea/modules/junit-gradle-empty.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/testes-unitarios-com-junit.iml" filepath="$PROJECT_DIR$/.idea/testes-unitarios-com-junit.iml" />
+    </modules>
+  </component>
+</project>
