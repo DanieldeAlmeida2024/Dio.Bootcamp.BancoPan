@@ -1,6 +1,9 @@
 package dio.spring_ioc_di_beans_autowire;
 
-public class ViaCepResponse {
+import org.springframework.stereotype.Component;
+
+@Component
+public class ViaCepResponse{
     private String cep;
     private String logradouro;
     private String localidade;
@@ -27,5 +30,14 @@ public class ViaCepResponse {
 
     public void setLocalidade(String localidade) {
         this.localidade = localidade;
+    }
+
+    @Override
+    public String toString() {
+        return "ViaCepResponse{" +
+                "cep='" + cep + '\'' +
+                ", logradouro='" + logradouro + '\'' +
+                ", localidade='" + localidade + '\'' +
+                '}';
     }
 }
