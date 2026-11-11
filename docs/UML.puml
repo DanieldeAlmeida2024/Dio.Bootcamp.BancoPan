@@ -1,17 +1,25 @@
 @startuml
-title Dio.Bootcamp.BancoPan — visão lógica
-actor Participante
-component "Entrada / execução" as Entrada
-component "Serviço / domínio" as Dominio
-component "ModuloCurso" as Componente
-component "Repositório ou adaptador" as Repositorio
-Participante --> Entrada
-Entrada --> Dominio
-Dominio --> Componente
-Componente --> Repositorio : se aplicável
-note right of Componente
-Visão didática e conceitual.
-A implementação deve ser conferida
-nos arquivos Java existentes.
+package "Módulos Básicos" {
+component "PrimeiroPrograma" as Basic
+component "Métodos / Desafios" as Methods
+}
+package "Módulos Intermediários" {
+component "POO / Collections / Exceções" as OOP
+component "Maven / JUnit" as Test
+}
+package "Módulos Avançados" {
+component "api-spring-boot /users" as API
+component "dio-spring-security-jwt /login" as JWT
+component "spring-data-jpa" as JPA
+component "configurations / IoC" as IoC
+}
+Basic --> Methods
+OOP --> Test
+IoC ..> API
+IoC ..> JWT
+IoC ..> JPA
+note bottom
+Módulos independentes e didáticos.
+Sem build Maven único na raiz.
 end note
 @enduml
