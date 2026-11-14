@@ -1,0 +1,27 @@
+@startuml
+title Segurança JWT — cadastro, login e acesso
+actor "Cliente" as Client
+component "UserController" as UC
+component "LoginController" as LC
+component "UserService" as US
+database "UserRepository + H2" as DB
+component "JWTCreator HS512" as JWT
+component "JWTFilter" as Filter
+component "Spring Security RBAC" as RBAC
+collections "JWT_SIGNING_KEY_BASE64\n(ambiente)" as Key
+Client --> UC : POST /users
+UC --> US : createUser
+US --> DB : salva BCrypt e USERS
+Client --> LC : POST /login
+LC --> DB : buscar usuário
+LC --> JWT : assina sub, iat, exp, roles
+Key --> JWT : chave HS512 persistente
+Client --> Filter : Authorization: Bearer JWT
+Filter --> JWT : verifica assinatura/prazo
+Filter --> RBAC : subject + authorities
+RBAC --> Client : 200, 401 ou 403
+note right of US
+  Papéis de entrada ignorados.
+  Sem auto-cadastro de MANAGERS.
+end note
+@enduml

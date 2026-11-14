@@ -15,6 +15,10 @@ cd "Módulos Avançados/Rest API/api-spring-boot"
 ./mvnw test
 ```
 
+## Laboratório de autenticação JWT corrigido
+
+O exemplo de Spring Security em `Módulos Avançados/dio-spring-security-jwt/` agora possui tratamento de assinatura HS512, autorização RBAC, cadastro sem privilégio administrativo e testes integrados H2/MockMvc. Documentação específica: [README do módulo JWT](Módulos%20Avançados/dio-spring-security-jwt/README.md). O workflow `security-jwt.yml` testa somente esse módulo, não toda a coleção de exercícios.
+
 ## Mapa do projeto
 
 - [Requisitos](docs/REQUISITOS.md)
