@@ -1,0 +1,21 @@
+name: Segurança JWT — Maven + testes HTTP
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  jwt:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+          cache-dependency-path: Módulos Avançados/dio-spring-security-jwt/pom.xml
+      - name: Executar JWT, login, cadastro e segurança HTTP em H2
+        run: mvn --batch-mode --no-transfer-progress -f "Módulos Avançados/dio-spring-security-jwt/pom.xml" verify
