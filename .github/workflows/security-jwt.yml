@@ -17,5 +17,7 @@ jobs:
           java-version: '21'
           cache: maven
           cache-dependency-path: Módulos Avançados/dio-spring-security-jwt/pom.xml
+      - name: Rejeitar arquivos compilados, caches e metadados locais versionados
+        run: python3 tools/check_repository_hygiene.py
       - name: Executar JWT, login, cadastro e segurança HTTP em H2
         run: mvn --batch-mode --no-transfer-progress -f "Módulos Avançados/dio-spring-security-jwt/pom.xml" verify
