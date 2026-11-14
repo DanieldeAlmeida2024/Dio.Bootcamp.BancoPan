@@ -1,6 +1,7 @@
 package dio.dio_spring_security_jwt.model;
 
 import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,13 +15,15 @@ public class User {
     private Integer id;
     @Column(length = 50, nullable = false)
     private String name;
-    @Column(length = 20, nullable = false)
+    @Column(length = 20, nullable = false, unique = true)
     private String username;
     @Column(length = 100, nullable = false)
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "tab_user_roles", joinColumns = @JoinColumn(name = "user_id"))
     @Column(name = "role_id")
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private List<String> roles = new ArrayList<>();
 
     public Integer getId() {
