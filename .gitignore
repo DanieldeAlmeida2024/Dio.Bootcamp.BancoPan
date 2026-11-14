@@ -1,1 +1,17 @@
 /.metadata/
+
+# Artefatos de IDE, compilação e caches (incluindo módulos aninhados)
+**/.idea/
+**/*.iml
+**/.settings/
+**/.classpath
+**/.project
+**/.gradle/
+**/target/
+**/build/
+**/out/
+**/*.class
+**/*.log
+**/*.pyc
+**/__pycache__/
+.DS_Store
