@@ -3,6 +3,7 @@ package dio.dio_spring_security_jwt.security;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -34,6 +35,9 @@ public class WebSecurityConfig {
                 .requestMatchers("/managers", "/managers/**").hasRole("MANAGERS")
                 .anyRequest().authenticated()
             )
+            .exceptionHandling(errors -> errors.authenticationEntryPoint(
+                (request, response, error) -> response.sendError(HttpServletResponse.SC_UNAUTHORIZED)
+            ))
             .sessionManagement(session ->
                 session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             );
