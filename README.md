@@ -15,9 +15,9 @@ cd "Módulos Avançados/Rest API/api-spring-boot"
 ./mvnw test
 ```
 
-## Laboratório de autenticação JWT corrigido
+## Autenticação JWT e autorização
 
-O exemplo de Spring Security em `Módulos Avançados/dio-spring-security-jwt/` agora possui tratamento de assinatura HS512, autorização RBAC, cadastro sem privilégio administrativo e testes integrados H2/MockMvc. Documentação específica: [README do módulo JWT](Módulos%20Avançados/dio-spring-security-jwt/README.md). O workflow `security-jwt.yml` testa somente esse módulo, não toda a coleção de exercícios.
+O módulo de Spring Security em `Módulos Avançados/dio-spring-security-jwt/` inclui tratamento de assinatura HS512, autorização RBAC, cadastro sem privilégio administrativo e testes integrados H2/MockMvc. Documentação específica: [README do módulo JWT](Módulos%20Avançados/dio-spring-security-jwt/README.md). O workflow `security-jwt.yml` testa somente esse módulo, não toda a coleção de exercícios.
 
 ## Mapa do projeto
 
@@ -31,10 +31,8 @@ O exemplo de Spring Security em `Módulos Avançados/dio-spring-security-jwt/` a
 
 ---
 
-## Documentação original preservada
+## Material do bootcamp Banco PAN
 
-# Desafios, atividades e observações sobre o Bootcamp Banco Pan da DIO
-
-Repositório criado para guardar atividades e observações do Bootcamp
+Exercícios, projetos de aula e anotações produzidos durante o bootcamp.
 
 [BootCamp JAVA Banco Pan da DIO](https://web.dio.me/track/banco-pan-java-developer)
