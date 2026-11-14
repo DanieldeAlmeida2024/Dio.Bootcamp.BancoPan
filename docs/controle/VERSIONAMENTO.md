@@ -13,3 +13,7 @@
 | TST-Dio.Bootcamp.BancoPan | 1.0.0 | `44735259d792` |
 
 MAJOR para contratos incompatíveis, MINOR para módulo/fluxo novo, PATCH para correção editorial. Cada PR funcional deve atualizar o caso de teste e sua evidência.
+
+## Reconciliação documental de 14/11/2026
+
+Especificações e UML históricas migradas para a `main` atual com aviso de escopo, sem substituir testes, arquitetura ou código posteriores. O CI vigente continua sendo a fonte de evidência funcional.
