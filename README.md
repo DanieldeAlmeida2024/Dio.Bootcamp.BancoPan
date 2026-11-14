@@ -36,3 +36,9 @@ O módulo de Spring Security em `Módulos Avançados/dio-spring-security-jwt/` i
 Exercícios, projetos de aula e anotações produzidos durante o bootcamp.
 
 [BootCamp JAVA Banco Pan da DIO](https://web.dio.me/track/banco-pan-java-developer)
+
+## Documentação de estudo e apresentação
+
+[Especificação própria](docs/projeto/ESPECIFICACAO.md) · [Diagramas UML](docs/uml/README.md) · [Matriz histórica de testes](docs/testes/PLANO_DE_TESTES.md).
+
+A modelagem original foi mantida como referência; os testes atuais e os limites de execução são documentados em [Plano de testes vigente](docs/PLANO_TESTES.md) e nas execuções de CI. Não atribuir aprovação de testes a casos apenas planejados.
